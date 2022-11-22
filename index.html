@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Username <input type="text" />
+    <p></p>
+    Password <input type="text" id="suraj" />
+    <p></p>
+    <button onclick="check()" id="rahul">Submit</button>
+    <script>
+      function check() {
+        let pass = document.getElementById("suraj").value;
+        if (pass.length < 10) {
+          alert("Password should contain atleat of 10 character");
+          document.getElementById("suraj").style.backgroundColor = "red";
+        } else {
+          alert("submited");
+          document.getElementById("suraj").style.backgroundColor = "lightgreen";
+          document.getElementById("rahul").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
